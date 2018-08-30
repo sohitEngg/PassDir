@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.root.myapplication.AddNewFruit">
+<!--<data>-->
+    <!--&lt;!&ndash;<import type="com.example.root.myapplication.ViewModels.AddNewFruitViewModel"/>&ndash;&gt;-->
+    <!--<variable name = "addFruitViewModel"-->
+        <!--type = "com.example.root.myapplication.ViewModels.AddNewFruitViewModel">-->
+    <!--</variable>-->
+<!--</data>-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/parentLayoutpadding"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/fId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Id"
+
+            />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/parentLayoutpadding"
+            android:hint="Name"
+
+            />
+        <EditText
+            android:id="@+id/cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/parentLayoutpadding"
+            android:hint="Cost"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:onClick="AddFruit"/>
+    </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</layout>
